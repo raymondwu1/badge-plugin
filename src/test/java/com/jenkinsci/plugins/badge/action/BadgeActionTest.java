@@ -17,11 +17,11 @@ public class BadgeActionTest {
   @Test
   public void getIconPath() {
     assertNull(BadgeAction.getIconPath(null));
-    assertEquals("/icon.png", BadgeAction.getIconPath("/icon.png"));
-    assertEquals("http://foo.com/icon.png", BadgeAction.getIconPath("http://foo.com/icon.png"));
-    assertEquals("https://foo.com/icon.png", BadgeAction.getIconPath("https://foo.com/icon.png"));
+    assertEquals("/icon.svg", BadgeAction.getIconPath("/icon.svg"));
+    assertEquals("http://foo.com/icon.svg", BadgeAction.getIconPath("http://foo.com/icon.svg"));
+    assertEquals("https://foo.com/icon.svg", BadgeAction.getIconPath("https://foo.com/icon.svg"));
 
-    assertEquals(Hudson.RESOURCE_PATH + "/images/16x16/http.png", BadgeAction.getIconPath("http.png"));
+    assertEquals(Hudson.RESOURCE_PATH + "/images/svgs/http.svg", BadgeAction.getIconPath("http.svg"));
 
   }
 

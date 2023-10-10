@@ -77,7 +77,7 @@ Puts a badge with a short text
 ```groovy
 
 // creates an entry in the build summary page and returns a summary
-// object corresponding to this entry. The icon must be one of the 48x48
+// object corresponding to this entry. The icon must be one of the svg
 // icons offered.
 
 {% describe_step  com.jenkinsci.plugins.badge.dsl.CreateSummaryStep %}
@@ -101,7 +101,7 @@ Removes summaries
 
 ## Icons
 
-In addition to the default [16x16](https://github.com/jenkinsci/jenkins/tree/master/war/src/main/webapp/images/16x16) icons offered by Jenkins, badge plugin provides the following icons:
+In addition to the default [svg](https://github.com/jenkinsci/jenkins/tree/master/war/src/main/webapp/images/svgs) icons offered by Jenkins, badge plugin provides the following icons:
 
 {% list_images  src/main/webapp/images %}
 
@@ -110,7 +110,7 @@ In addition to the default [16x16](https://github.com/jenkinsci/jenkins/tree/mas
 Other plugin icons can be used by setting the path of the icon within the jenkins context. Don't forget the leading '/'.
 
 ```groovy
-addBadge(icon: "/static/8361d0d6/images/16x16/help.png", text: "help")
+addBadge(icon: "/static/8361d0d6/images/svgs/help.svg", text: "help")
 ```
 
 ## Allow HTML in Badge and Summary
